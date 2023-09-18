@@ -1,6 +1,7 @@
 # Neural Net Regression Model on a Toy Example
 
-UNDERSTANDING OF THE PROBLEM
+
+## UNDERSTANDING OF THE PROBLEM
 
 The problem is a regression problem, where we have to predict the total price of the products based on the data we have about the quantity and total price of our past purchases. We do not have the individual prices of the products (i.e., Fish, Chips, and Ketchup).
 
@@ -11,7 +12,7 @@ We will build a neural net model with a single linear layer that will produce on
 
 
 
-THOUGHT BEHIND THE CODE
+## THOUGHT BEHIND THE CODE
 
 I have created three separate Excel files for delta rule training data, batch rule training data, and testing data (as attached below). We have read this file into pandas data frames.
  	 	 
@@ -21,7 +22,7 @@ For the delta rule model, we iterate over each data point in our training datase
 For the batch delta rule model, we create a DataLoader object that will iterate through the dataset with a batch size of three. We perform the same process as the delta rule model but over 10 iterations or epochs. We calculate the gradient as the average gradient of all data points in a single batch. We use this average gradient to update the model parameters only once for each batch.
 Our models return the tuned weights and biases. These weights and biases are then passed as an argument to the test class and we calculate the losses. We have plotted both the training and testing losses using matplotlib library.
 
-DELTA RULE
+### DELTA RULE
 
 ![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/c39237a4-d447-42ea-a168-03131393eeec)
 
@@ -31,7 +32,7 @@ Final Weights and Biases after training the model
 ![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/01852b3d-5dcb-499c-9d6a-575e2e1be5ea)
 
 
-BATCH DELTA RULE
+### BATCH DELTA RULE
 
 ![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/4ad70bdf-2496-4fc5-b15c-2c99721107d7)
 
