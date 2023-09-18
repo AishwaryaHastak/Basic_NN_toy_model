@@ -41,7 +41,8 @@ Final Weights and Biases after training the model
 
 ![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/881f6ec9-ca85-4680-8c57-286b7559f310)
 
-<br>
+
+
 
 ## FINDINGS
 
