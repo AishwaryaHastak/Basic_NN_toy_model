@@ -1,6 +1,7 @@
 # Neural Net Regression Model on a Toy Example
 
 UNDERSTANDING OF THE PROBLEM
+
 The problem is a regression problem, where we have to predict the total price of the products based on the data we have about the quantity and total price of our past purchases. We do not have the individual prices of the products (i.e., Fish, Chips, and Ketchup).
 
 ![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/24d8ea2d-4e11-4ef6-ba2a-6970a6f41831)
@@ -10,6 +11,7 @@ We will build a neural net model with a single linear layer that will produce on
 
 
 THOUGHT BEHIND THE CODE
+
 I have created three separate Excel files for delta rule training data, batch rule training data, and testing data (as attached below). We have read this file into pandas data frames.
  	 	 
 We have two separate classes for training and testing that have Dataset objects as their argument. We have implemented three methods of the Dataset Class in it, __init__ is used to initialize all the parameters of the model, __len__ returns the length of the dataset and __getitem__ method returns the data point at the specified index.
@@ -35,4 +37,5 @@ Final Weights and Biases after training the model
 
 
 FINDINGS
+
 The batch delta rule model performed better than the normal delta rule model. The training loss graph for the batch model follows a gradually decreasing curve, showing a gradual decrease in the loss of the model. More epochs and training in batches helped the model perform better.
