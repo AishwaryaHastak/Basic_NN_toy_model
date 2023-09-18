@@ -4,7 +4,8 @@ UNDERSTANDING OF THE PROBLEM
 
 The problem is a regression problem, where we have to predict the total price of the products based on the data we have about the quantity and total price of our past purchases. We do not have the individual prices of the products (i.e., Fish, Chips, and Ketchup).
 
-![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/24d8ea2d-4e11-4ef6-ba2a-6970a6f41831)
+![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/ed8864f3-44cf-42e6-a887-b3fa09efea96)
+
 
 We will build a neural net model with a single linear layer that will produce one output, i.e., the estimated total price. After training on multiple data points, our final trained model should have the weights associated with each of these three products, to be proportional to their actual individual prices.
 
@@ -22,18 +23,23 @@ Our models return the tuned weights and biases. These weights and biases are the
 
 DELTA RULE
 
-![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/b0139556-e741-4a2b-a46b-424090abf18f)
+![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/c39237a4-d447-42ea-a168-03131393eeec)
+
 
 Final Weights and Biases after training the model
-![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/301c080d-bf86-4f70-8cae-cfdf7d29e62f)
+
+![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/01852b3d-5dcb-499c-9d6a-575e2e1be5ea)
+
 
 BATCH DELTA RULE
 
-![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/c491e386-7e80-4a59-8890-a0db32160297)
+![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/4ad70bdf-2496-4fc5-b15c-2c99721107d7)
+
 
 Final Weights and Biases after training the model
 
-![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/21571a57-0af4-4102-beac-2f6f86af5c34)
+![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/881f6ec9-ca85-4680-8c57-286b7559f310)
+
 
 
 FINDINGS
