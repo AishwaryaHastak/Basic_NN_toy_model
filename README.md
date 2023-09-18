@@ -10,7 +10,7 @@ The problem is a regression problem, where we have to predict the total price of
 
 We will build a neural net model with a single linear layer that will produce one output, i.e., the estimated total price. After training on multiple data points, our final trained model should have the weights associated with each of these three products, to be proportional to their actual individual prices.
 
-
+<br>
 
 ## THOUGHT BEHIND THE CODE
 
@@ -41,8 +41,8 @@ Final Weights and Biases after training the model
 
 ![image](https://github.com/AishwaryaHastak/Basic_NN_toy_model/assets/31357026/881f6ec9-ca85-4680-8c57-286b7559f310)
 
+<br>
 
-
-FINDINGS
+## FINDINGS
 
 The batch delta rule model performed better than the normal delta rule model. The training loss graph for the batch model follows a gradually decreasing curve, showing a gradual decrease in the loss of the model. More epochs and training in batches helped the model perform better.
