@@ -16,15 +16,15 @@ We will build a neural net model with a single linear layer that will produce on
 
 I have created three separate Excel files for delta rule training data, batch rule training data, and testing data (as attached below). We have read this file into pandas data frames.
  	 	 
-\We have two separate classes for training and testing that are inheriting the Dataset class. We have implemented three methods of the Dataset Class in it, __init__ is used to load data and initialize all the parameters of the model, __len__ returns the length of the dataset and __getitem__ method returns the data point at the specified index.
+We have two separate classes for training and testing that are inheriting the Dataset class. We have implemented three methods of the Dataset Class in it, __init__ is used to load data and initialize all the parameters of the model, __len__ returns the length of the dataset and __getitem__ method returns the data point at the specified index.
 
-\We have separated the data frame into two parts to create feature and target tensors. We in turn create a dataset object and pass it to our models.
+We have separated the data frame into two parts to create feature and target tensors. We in turn create a dataset object and pass it to our models.
 
-\For the delta rule model, we iterate over each data point in our training dataset and calculate the price estimate using the linear formula. We then calculate the MSE loss against the actual price and then calculate the gradient and update weights.
+For the delta rule model, we iterate over each data point in our training dataset and calculate the price estimate using the linear formula. We then calculate the MSE loss against the actual price and then calculate the gradient and update weights.
 
-\For the batch delta rule model, we create a DataLoader object that will iterate through the dataset with a batch size of three. We perform the same process as the delta rule model but over 10 iterations or epochs. We calculate the gradient as the average gradient of all data points in a single batch. We use this average gradient to update the model parameters only once for each batch.
+For the batch delta rule model, we create a DataLoader object that will iterate through the dataset with a batch size of three. We perform the same process as the delta rule model but over 10 iterations or epochs. We calculate the gradient as the average gradient of all data points in a single batch. We use this average gradient to update the model parameters only once for each batch.
 
-\Our models return the tuned weights and biases. These weights and biases are then passed as an argument to the test class and we calculate the losses. We have plotted both the training and testing losses.
+Our models return the tuned weights and biases. These weights and biases are then passed as an argument to the test class and we calculate the losses. We have plotted both the training and testing losses.
 
 ### DELTA RULE
 
